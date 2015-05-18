@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Days+One|Jura);
+html {
+  height: 100%;
+  margin: 0;
+  background: url("http://i.imgur.com/0NyAewS.jpg") no-repeat fixed;
+  background-size: cover;
+}
+html body {
+  margin: 0;
+  height: 100%;
+  font-family: Jura;
+  color: #b6c3c5;
+  background-color: rgba(19, 24, 27, 0.9);
+  background-size: 100%, 100%;
+}
+
+#weatherBox {
+  position: relative;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+          transform: translateY(-30%);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+  overflow: hidden;
+}
+#weatherBox #area {
+  font-size: 3em;
+}
+#weatherBox #area #city, #weatherBox #area #state {
+  display: inline;
+}
+#weatherBox #weather {
+  font-size: 2em;
+}
+#weatherBox #temp {
+  font-family: Days One;
+  font-size: 8em;
+  font-weight: 800;
+}
+#weatherBox #suggestion {
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+#weatherBox #forecast {
+  width: 520px;
+  margin: 0 auto;
+}
+#weatherBox #forecast .day {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+#weatherBox #forecast .day .weekday {
+  font-size: 1.5em;
+}
+#weatherBox #forecast .day .temps {
+  font-size: 3em;
+}
+#weatherBox #forecast .day .temps .hi {
+  color: #8c736f;
+}
+#weatherBox footer {
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #weatherBox #forecast {
+    width: 100%;
+  }
+
+  .cond{
+    width: 90%;
+  }
+}
